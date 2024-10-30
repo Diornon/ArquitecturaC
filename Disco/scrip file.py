@@ -19,12 +19,14 @@ frecu = list(frecuencia.values())
 data = {
     'Number': numbersfrecu,
     'Frecuencia': frecu
+
+    
 }
 df = pd.DataFrame(data)
 df.to_csv('Tabla_de_frecuencia.csv', index=False)
 plt.plot(numbersfrecu,frecu)
-plt.xlabel('Frecuencia')
-plt.ylabel('Tamaño de archivos')
+plt.ylabel('Frecuencia')
+plt.xlabel('Tamaño de archivos')
 plt.title('Grafico de Frecuencias')
 savefig('Grafico')
 
