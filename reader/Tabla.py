@@ -11,12 +11,6 @@ for i in numbers:
 
     nums.append(a)
 
-
-
-
-
-
-
 plt.plot(nums)
 plt.ylabel('Response time in milliseconds')
 plt.xlabel('Time in seconds')
